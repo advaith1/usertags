@@ -1,0 +1,113 @@
+[
+	{
+		"name": "ping",
+		"description": "Check the bot's response time",
+		"integration_types": [1],
+		"contexts": [0, 1, 2]
+	},
+	{
+		"name": "help",
+		"description": "Learn how to use Usertags",
+		"integration_types": [1],
+		"contexts": [0, 1, 2]
+	},
+	{
+		"name": "create",
+		"description": "Create a new tag",
+		"options": [
+			{
+				"name": "name",
+				"description": "The name of the tag (1-100 characters)",
+				"type": 3,
+				"required": true,
+				"min_length": 1,
+				"max_length": 100
+			},
+			{
+				"name": "content",
+				"description": "The text to respond to this tag with (1-2000 characters)",
+				"type": 3,
+				"required": true,
+				"min_length": 1,
+				"max_length": 2000
+			},
+			{
+				"name": "ephemeral",
+				"description": "Whether this tag response should only be visible to you (default false)",
+				"type": 5
+			}
+		],
+		"integration_types": [1],
+		"contexts": [0, 1, 2]
+	},
+	{
+		"name": "edit",
+		"description": "Edit a tag",
+		"options": [
+			{
+				"name": "tag",
+				"description": "The (current) name of the tag to edit. After entering, click the properties to edit above.",
+				"type": 3,
+				"required": true,
+				"autocomplete": true,
+				"min_length": 1,
+				"max_length": 100
+			},
+			{
+				"name": "newname",
+				"description": "The new name of this tag (1-100 characters)",
+				"type": 3,
+				"min_length": 1,
+				"max_length": 100
+			},
+			{
+				"name": "content",
+				"description": "The new text to respond to this tag with (1-2000 characters)",
+				"type": 3,
+				"min_length": 1,
+				"max_length": 2000
+			},
+			{
+				"name": "ephemeral",
+				"description": "Whether this tag response should only be visible to you",
+				"type": 5
+			}
+		],
+		"integration_types": [1],
+		"contexts": [0, 1, 2]
+	},
+	{
+		"name": "delete",
+		"description": "Delete a tag",
+		"options": [
+			{
+				"name": "tag",
+				"description": "The name of the tag to delete",
+				"type": 3,
+				"required": true,
+				"autocomplete": true,
+				"min_length": 1,
+				"max_length": 100
+			}
+		],
+		"integration_types": [1],
+		"contexts": [0, 1, 2]
+	},
+	{
+		"name": "tag",
+		"description": "Send a tag",
+		"options": [
+			{
+				"name": "tag",
+				"description": "The tag to send",
+				"type": 3,
+				"required": true,
+				"autocomplete": true,
+				"min_length": 1,
+				"max_length": 100
+			}
+		],
+		"integration_types": [1],
+		"contexts": [0, 1, 2]
+	}
+]
