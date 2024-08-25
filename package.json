@@ -1,12 +1,12 @@
 {
 	"dependencies": {
-		"@discordjs/core": "^1.1.1",
-		"@discordjs/rest": "^2.2.0",
-		"@discordjs/ws": "^1.0.2",
+		"@discordjs/core": "^1.2.0",
+		"@discordjs/rest": "^2.3.0",
+		"@discordjs/ws": "^1.1.1",
 		"@types/common-tags": "^1.8.4",
-		"@types/node": "^20.10.2",
+		"@types/node": "^20.16.1",
 		"common-tags": "^1.8.2",
-		"firebase-admin": "^11.11.1"
+		"firebase-admin": "^12.4.0"
 	},
 	"volta": {
 		"node": "20.10.0"
